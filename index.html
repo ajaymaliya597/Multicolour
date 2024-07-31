@@ -1,204 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multicolours</title>
-    <link rel="shortcut icon" href="./multicolours.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <style>
-        body {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            background: linear-gradient(135deg, #f06, #4a90e2);
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
+      body {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      div {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+          rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+          rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+          rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+          rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+          rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        animation: float 2s alternate infinite;
+        animation-name: box;
+      
+        transition: all 1s;
+      }
+      div:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      @keyframes box {
+        from {
+          transform: translateY(0px);
+          transform: scale(0.7);
+          border-radius: 0%;
+          transform: rotate(0deg);
         }
-        
-        div {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            cursor: pointer;
-            background: #ffffff;
-            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
-                        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
-                        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
-                        rgba(0, 0, 0, 0.06) 0px 2px 1px, 
-                        rgba(0, 0, 0, 0.09) 0px 4px 2px, 
-                        rgba(0, 0, 0, 0.09) 0px 8px 4px, 
-                        rgba(0, 0, 0, 0.09) 0px 16px 8px, 
-                        rgba(0, 0, 0, 0.09) 0px 32px 16px;
-            transition: transform 1s ease, box-shadow 0.3s ease, background 0.3s ease;
-            animation: float 3s ease-in-out infinite;
+        to {
+          transform: translateY(100px);
+          transform: scale(1);
+          border-radius: 50%;
+          transform: rotate(360deg);
         }
-        
-        div:hover {
-            transform: translateY(-15px);
-            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
-                        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
-                        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
-                        rgba(0, 0, 0, 0.06) 0px 2px 1px, 
-                        rgba(0, 0, 0, 0.09) 0px 4px 2px, 
-                        rgba(0, 0, 0, 0.09) 0px 8px 4px, 
-                        rgba(0, 0, 0, 0.09) 0px 16px 8px, 
-                        rgba(0, 0, 0, 0.09) 0px 32px 16px;
-            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
-        }
-        
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-        
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            body {
-                flex-direction: column;
-            }
-            div {
-                width: 80px;
-                height: 80px;
-            }
-        }
-        </style>
-                
-</head>
-<body>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
 
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
     <script>
-        const divs = document.querySelectorAll("div");
-        divs.forEach(div => {
-            div.addEventListener("mouseover", function() {
-                let r = Math.floor(Math.random() * 256);
-                let g = Math.floor(Math.random() * 256);
-                let b = Math.floor(Math.random() * 256);
-                let color = `${r},${g},${b}`;
-                div.style.backgroundColor = `rgb(${color})`;
-            });
-        });
-        
-        
-
+      document.querySelectorAll("div").forEach((div) => {
+        div.onmouseover = function () {
+          let color = `${Math.floor(Math.random() * 255)},${Math.floor(
+            Math.random() * 255
+          )},${Math.floor(Math.random() * 255)}`;
+          div.style.backgroundColor = rgb(${color});
+          //  document.body.style.backgroundColor=rgb(${color});
+        };
+      });
     </script>
-</body>
+  </body>
 </html>
